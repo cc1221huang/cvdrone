@@ -64,7 +64,8 @@ int main(int argc, char *argv[])
         if (key == 'l') vy = -1.0;
         if (key == 'q') vz =  1.0;
         if (key == 'a') vz = -1.0;
-        ardrone.move3D(vx, vy, vz, vr);
+        // ardrone.move3D(vx, vy, vz, vr);
+        ardrone.move(vx, vy, vr);
 
         // Change camera
         static int mode = 0;
